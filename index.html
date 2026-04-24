@@ -1,99 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Paws & Help – Donate to Local Shelters</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>A Helping Paw</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <header>
-    <h1>Helping Paws</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#donate">Donate Items</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <section id="hero">
-    <h2>Support Local Animal Shelters</h2>
-    <p>Your small donation can make a big impact for animals in need.</p>
-    <button id="hero-btn">See How You Can Help</button>
-  </section>
+<header>
+  <h1>A Helping Paw</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="food.html">Food</a>
+    <a href="toys.html">Toys</a>
+    <a href="bedding.html">Bedding</a>
+  </nav>
+</header>
 
-  <section id="about">
-    <h2>Why Donations Matter</h2>
-    <article>
-      <p>
-        Local shelters rely on community support to keep animals safe, fed, and comfortable.
-        By donating essential items like food, toys, and pee pads, you directly improve the
-        quality of life for animals waiting for a forever home.
-      </p>
-    </article>
-  </section>
-
-  <section id="donate">
-  <h2>Items You Can Donate</h2>
-  <div class="card-container">
-
-    <article class="card">
-      <img src="images/food.jpg" alt="Pet food bowl" class="donate-img" />
-      <h3>Food</h3>
-      <p>Help shelters feed dogs and cats with high-quality pet food.</p>
-      <a class="donate-link" 
-         href="https://www.chewy.com/b/dog-food-294" 
-         target="_blank">
-        Donate Food
-      </a>
-    </article>
-
-    <article class="card">
-      <img src="images/toys.jpg" alt="Pet toys assortment" class="donate-img" />
-      <h3>Toys</h3>
-      <p>Provide enrichment and comfort through interactive pet toys.</p>
-      <a class="donate-link" 
-         href="https://www.chewy.com/b/cat-toys-88" 
-         target="_blank">
-        Donate Toys
-      </a>
-    </article>
-
-    <article class="card">
-      <img src="images/bedding.jpg" alt="Pet bedding tray" class="donate-img" />
-      <h3>Bedding</h3>
-      <p>Help shelters stay clean and comfortable with fresh bedding supplies.</p>
-      <a class="donate-link" 
-         href="https://www.chewy.com/s?query=pet%20bedding" 
-         target="_blank">
-        Donate Bedding
-      </a>
-    </article>
-
-  </div>
+<section>
+  <h2>Why Donate to Local Shelters?</h2>
+  <p>
+    Behind every shelter door is an animal waiting – waiting for a second chance, a warm place to rest, and someone to finally choose them. Many arrive scared, confused, and unsure of what comes next. In those first days, it’s not just food or a place to sleep they need—it’s comfort, care, and a sense of safety.
+  <p>
+    That’s where your support makes a difference. A soft bed can help a nervous dog finally relax. A toy can bring out the playful side of a cat who’s been hiding. A simple meal can be the first step toward rebuilding trust. These small moments add up, helping animals feel less alone while they wait for a home of their own.
+  <p>
+    When you donate, you’re not just giving supplies – you’re giving hope. You’re helping turn fear into comfort, loneliness into connection, and uncertainty into the possibility of a better life. For these animals, that can mean everything.
 </section>
 
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <form id="contact-form">
-      <label>Your Name:</label>
-      <input type="text" id="name" placeholder="Enter your name" required />
+<section>
+  <h2>Leave a Comment or Question</h2>
+  <form id="commentForm">
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="email" id="email" placeholder="Your Email" required>
+    <textarea id="comment" placeholder="Your message"></textarea>
+    <button type="submit" class="button">Submit</button>
+  </form>
+</section>
 
-      <label>Your Message:</label>
-      <textarea id="message" placeholder="Write your message" required></textarea>
+<footer>
+  <p>Helping animals one donation at a time 🐾</p>
+</footer>
 
-      <button type="submit">Send Message</button>
-    </form>
-    <p id="form-response"></p>
-  </section>
-
-  <footer>
-    <p>© 2026 Helping Paws • Helping animals one donation at a time</p>
-  </footer>
-
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
+

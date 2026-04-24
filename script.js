@@ -1,23 +1,17 @@
-// Scroll from hero button → donate section
-document.getElementById("hero-btn").addEventListener("click", () => {
-  document.getElementById("donate").scrollIntoView({ behavior: "smooth" });
-});
-
-// Form submission handling
-document.getElementById("contact-form").addEventListener("submit", function (e) {
+document.getElementById("commentForm").addEventListener("submit", function(e) {
   e.preventDefault();
-  handleForm();
+
+  const entry = {
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    comment: document.getElementById("comment").value
+  };
+
+  let comments = JSON.parse(localStorage.getItem("comments")) || [];
+  comments.push(entry);
+
+  localStorage.setItem("comments", JSON.stringify(comments));
+
+  alert("Thank you! Your message has been saved.");
+  this.reset();
 });
-
-// Function to update the DOM
-function handleForm() {
-  const name = document.getElementById("name").value;
-  const message = document.getElementById("message").value;
-
-  const response = document.getElementById("form-response");
-  response.textContent = `Thank you, ${name}! Your message has been received.`;
-  response.style.color = "green";
-
-  // Clear fields
-  document.getElementById("contact-form").reset();
-}
